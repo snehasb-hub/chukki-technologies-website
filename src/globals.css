@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Lovable-style design tokens ===== */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --accent: 262 83% 58%;
+  --accent-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+}
+
+/* ===== Base styles ===== */
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* ===== Utility classes Lovable uses ===== */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.gradient-quantum {
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+}
+
+.gradient-quantum-text {
+  background: linear-gradient(to right, #22d3ee, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.circuit-pattern {
+  background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
